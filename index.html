@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- config -->
@@ -96,7 +98,7 @@
               <ul class="block lg:flex">
                 <li class="group">
                   <a
-                    href="#home"
+                    href="#"
                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
                     >Beranda</a
                   >
@@ -124,9 +126,9 @@
                 </li>
                 <li class="group">
                   <a
-                    href="#blog"
+                    href="#collaboration"
                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                    >Blog</a
+                    >Collaboration</a
                   >
                 </li>
                 <li class="group">
@@ -147,7 +149,12 @@
     <section id="home" class="pt-36">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2">
+          <div
+            class="w-full self-center px-4 lg:w-1/2"
+            data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-anchor="#home"
+          >
             <h1 class="text-base font-semibold text-primary md:text-xl">
               Halo Semua 👌, saya
               <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">
@@ -170,7 +177,11 @@
               Hubungi Saya
             </a>
           </div>
-          <div class="w-full self-end px-4 lg:w-1/2">
+          <div
+            class="w-full self-end px-4 lg:w-1/2"
+            data-aos="fade-left"
+            data-aos-duration="600"
+          >
             <div class="relative mt-10 lg:mt-0 lg:right-0">
               <img
                 src="assets/img/profile.png"
@@ -203,12 +214,18 @@
     <section id="about" class="pt-36 pb-32">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-10 lg:w-1/2">
-            <h4
-              class="font-bold uppercase text-primary text-lg mb-3 lg:text-4xl"
-            >
+          <div
+            class="w-full px-4 mb-10 lg:w-1/2"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <h4 class="font-semibold text-primary text-md mb-3 lg:text-lg">
               Tentang Saya
             </h4>
+            <h2 class="font-bold text-dark text-xl lg:text-4xl mb-3">
+              Ahmad Fahmi Faza
+            </h2>
             <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
               Saya adalah lulusan Teknik Informatika, Saya memiliki kemampuan
               dalam memahami konsep-konsep dasar pemrograman khususnya website.
@@ -217,7 +234,12 @@
               informasi.
             </p>
           </div>
-          <div class="w-full px-4 lg:w-1/2">
+          <div
+            class="w-full px-4 lg:w-1/2"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-anchor-placement="center-bottom"
+          >
             <h3
               class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10"
             >
@@ -228,7 +250,12 @@
             >
               Ayo ikuti saya di media sosial yang lain!.
             </p>
-            <div class="flex items-center">
+            <div
+              class="flex items-center"
+              data-aos="fade-right"
+              data-aos-delay="100"
+              data-aos-duration="600"
+            >
               <!-- instagram -->
               <a
                 href="https://instagram.com/fahmifaza_"
@@ -315,25 +342,32 @@
 
     <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
       <div class="container">
-        <div class="w-full px-4">
+        <div class="w-full px-4" data-aos="fade-up" data-aos-duration="600">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
             <h2
               class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
             >
-              Project Terbaru
+              Project Web Developer
             </h2>
             <p class="font-medium text-secondary text-md md:text-lg">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
-              dolores tempora deleniti unde ipsam atque enim ipsum tenetur nemo
-              sequi.
+              Proyek ini adalah buah dari proses belajar saya dalam menekuni
+              dunia web developer yang penuh semangat dan kegembiraan, dan saya
+              berharap bisa menghadirkan sesuatu yang menyenangkan dan
+              bermanfaat bagi kalian semua.
             </p>
           </div>
         </div>
         <div
           class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
         >
-          <div id="cakrabudaya" class="mb-12 p-4 md:w-1/2">
+          <div
+            id="cakrabudaya"
+            class="mb-12 p-4 md:w-1/2"
+            data-aos="zoom-in-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="600"
+          >
             <div class="rounded-md shadow-md overflow-hidden">
               <img src="assets/img/1.png" alt="companyProfile" width="w-full" />
             </div>
@@ -341,20 +375,28 @@
               Company Profile Batik Cakra Budaya
             </h3>
             <p class="font-medium text-base text-secondary">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
-              quo error exercitationem earum. Quisquam, iusto.
+              Website Company Profile Dinamis Batik Cakra Budaya ini menggunakan
+              framework bootstrap dan bahasa pemograman php untuk bagian
+              manajemen kontennya ditambah sedikit bahasa javascript agar lebih
+              interaktif, website ini juga sudah responsive.
             </p>
           </div>
-          <div id="fierci" class="mb-12 p-4 md:w-1/2">
+          <div
+            id="fierci"
+            class="mb-12 p-4 md:w-1/2"
+            data-aos="zoom-in-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="600"
+          >
             <div class="rounded-md shadow-md overflow-hidden">
               <img src="assets/img/2.png" alt="companyProfile" width="w-full" />
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
-              Company Profile Fierci.id
+              Landing Page Fierci.id
             </h3>
             <p class="font-medium text-base text-secondary">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
-              quo error exercitationem earum. Quisquam, iusto.
+              Static Website landing page company profile produk fashion dengan
+              menggunakan html, css dan framework bootstrap.
             </p>
           </div>
         </div>
@@ -364,21 +406,28 @@
     <!-- clients start -->
     <section id="clients" class="pt-36 pb-32 bg-slate-800">
       <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto text-center mb-16">
+        <div class="w-full px-4" data-aos="fade-up" data-aos-duration="600">
+          <div class="mx-auto text-center">
             <h4 class="font-semibold text-lg text-primary mb-2">Clients</h4>
             <h2
               class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl"
             >
               Yang Pernah Bekerja Sama
             </h2>
-            <p class="font-medium text-secondary text-md md:text-lg">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
-              quasi sapiente vitae?
+            <p
+              class="font-medium text-secondary text-md md:text-lg max-w-xl mx-auto"
+            >
+              Dalam Perjalanan belajar saya ada beberapa pengusaha umkm yang
+              mempercayakan saya untuk membuatkan website untuk usaha mereka.
             </p>
           </div>
         </div>
-        <div class="w-full px-4">
+        <div
+          class="w-full px-4"
+          data-aos="zoom-in-up"
+          data-aos-duration="600"
+          data-aos-delay="100"
+        >
           <div class="flex flex-wrap items-center justify-center">
             <a
               href="#cakrabudaya"
@@ -397,29 +446,37 @@
       </div>
     </section>
     <!-- clients end -->
-    <!-- blog start -->
-    <section id="blog" class="pt-36 pb-32 bg-slate-100">
+    <!-- collaboration start -->
+    <section id="collaboration" class="pt-36 pb-32 bg-slate-100">
       <div class="container">
-        <div class="w-full px-4">
+        <div class="w-full px-4" data-aos="fade-up" data-aos-duration="600">
           <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
+            <h4 class="font-semibold text-lg text-primary mb-2">
+              Collaboration
+            </h4>
             <h2
               class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
             >
-              Tulisan Terkini
+              Project Design
             </h2>
             <p class="font-medium text-secondary text-md md:text-lg">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-              nobis similique nemo iure?
+              Saya berkreasi dengan teman saya membuat design merchandise,
+              t-shirt, event-event lokal di kota saya
             </p>
           </div>
         </div>
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+        <div class="flex flex-wrap justify-center">
+          <div
+            id="circuse"
+            class="w-full px-4 lg:w-1/2 xl:w-1/3 relative"
+            data-aos="zoom-in-up"
+            data-aos-duration="600"
+            data-aos-anchor-placement="center-bottom"
+          >
             <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
               <img
-                src="https://source.unsplash.com/360x200?programming"
-                alt="programming"
+                src="assets/img/design/circuse1.png"
+                alt="circuse1"
                 class="w-full"
               />
               <div class="py-8 px-6">
@@ -427,25 +484,25 @@
                   <a
                     href="#"
                     class="block mb-3 text-dark font-semibold text-xl hover:text-primary truncate"
-                    >Tips Belajar Promramming</a
+                    >T-Shirt Circuse</a
                   >
                 </h3>
                 <p class="font-medium text-base text-secondary mb-6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptate vero eius ipsam est.
+                  Design T-Shirt untuk Brand Circuse
                 </p>
-                <a
-                  href="#"
-                  class="font-medium text-white text-sm bg-primary rounded-lg py-2 px-4 hover:opacity-80"
-                  >Baca Selengkapnya</a
-                >
               </div>
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div
+            class="w-full px-4 lg:w-1/2 xl:w-1/3"
+            data-aos="zoom-in-up"
+            data-aos-duration="600"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="100"
+          >
             <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
               <img
-                src="https://source.unsplash.com/360x200?rockstar"
+                src="assets/img/design/circuse2.png"
                 alt="Music"
                 class="w-full"
               />
@@ -454,25 +511,25 @@
                   <a
                     href="#"
                     class="block mb-3 text-dark font-semibold text-xl hover:text-primary truncate"
-                    >Lika-liku Menjadi Rockstart</a
+                    >T-Shirt Circuse</a
                   >
                 </h3>
                 <p class="font-medium text-base text-secondary mb-6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                  libero voluptates perspiciatis!
+                  Design T-Shirt untuk Brand Circuse
                 </p>
-                <a
-                  href="#"
-                  class="font-medium text-white text-sm bg-primary rounded-lg py-2 px-4 hover:opacity-80"
-                  >Baca Selengkapnya</a
-                >
               </div>
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div
+            class="w-full px-4 lg:w-1/2 xl:w-1/3"
+            data-aos="zoom-in-up"
+            data-aos-duration="600"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="200"
+          >
             <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
               <img
-                src="https://source.unsplash.com/360x200?badminton"
+                src="assets/img/design/firstweapon.png"
                 alt="badminton"
                 class="w-full"
               />
@@ -481,30 +538,141 @@
                   <a
                     href="#"
                     class="block mb-3 text-dark font-semibold text-xl hover:text-primary truncate"
-                    >Olahraga yang ngetrend disemua kalangan</a
+                    >T-Shirt First Weapon</a
                   >
                 </h3>
                 <p class="font-medium text-base text-secondary mb-6">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Blanditiis esse laborum voluptas iure quas?
+                  Design T-Shirt untuk band hardcore Pekalongan 'FirstWeapon'
                 </p>
-                <a
-                  href="#"
-                  class="font-medium text-white text-sm bg-primary rounded-lg py-2 px-4 hover:opacity-80"
-                  >Baca Selengkapnya</a
-                >
+              </div>
+            </div>
+          </div>
+          <div
+            id="fukkyu"
+            class="w-full px-4 lg:w-1/2 xl:w-1/3"
+            data-aos="zoom-in-up"
+            data-aos-duration="600"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
+              <img
+                src="assets/img/design/fukkyu.png"
+                alt="badminton"
+                class="w-full"
+              />
+              <div class="py-8 px-6">
+                <h3>
+                  <a
+                    href="#"
+                    class="block mb-3 text-dark font-semibold text-xl hover:text-primary truncate"
+                    >T-Shirt Fukkyu</a
+                  >
+                </h3>
+                <p class="font-medium text-base text-secondary mb-6">
+                  Design T-Shirt untuk band hardcore Pekalongan 'Fukkyu'
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full px-4 lg:w-1/2 xl:w-1/3"
+            data-aos="zoom-in-up"
+            data-aos-duration="600"
+            data-aos-delay="100"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
+              <img
+                src="assets/img/design/mataramstretcrew.png"
+                alt="badminton"
+                class="w-full"
+              />
+              <div class="py-8 px-6">
+                <h3>
+                  <a
+                    href="#"
+                    class="block mb-3 text-dark font-semibold text-xl hover:text-primary truncate"
+                    >T-Shirt First Weapon</a
+                  >
+                </h3>
+                <p class="font-medium text-base text-secondary mb-6">
+                  Design T-Shirt untuk Komunitas 'Mataram Street Crew'
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full px-4 lg:w-1/2 xl:w-1/3"
+            data-aos="zoom-in-up"
+            data-aos-duration="600"
+            data-aos-delay="200"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
+              <img
+                src="assets/img/design/pekalonganbangkitbersama.png"
+                alt="badminton"
+                class="w-full"
+              />
+              <div class="py-8 px-6">
+                <h3>
+                  <a
+                    href="#"
+                    class="block mb-3 text-dark font-semibold text-xl hover:text-primary truncate"
+                    >T-Shirt dan Banner Event</a
+                  >
+                </h3>
+                <p class="font-medium text-base text-secondary mb-6">
+                  Design T-Shirt Dan Banner untuk Event 'Pekalongan Bangkit
+                  Bersama'
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            id="pss"
+            class="w-full px-4 lg:w-1/2 xl:w-1/3"
+            data-aos="zoom-in-up"
+            data-aos-duration="600"
+            data-aos-delay="100"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
+              <img
+                src="assets/img/design/BCSPlatG.png"
+                alt="badminton"
+                class="w-full"
+              />
+              <div class="py-8 px-6">
+                <h3>
+                  <a
+                    href="#"
+                    class="block mb-3 text-dark font-semibold text-xl hover:text-primary truncate"
+                    >T-Shirt BCS PLAT G</a
+                  >
+                </h3>
+                <p class="font-medium text-base text-secondary mb-6">
+                  Design T-Shirt untuk Event Celebration 6TH 'PLAT G X PSS
+                  SLEMAN'
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- blog end -->
+    <!-- collaboration end -->
     <!-- contact start -->
     <section id="contact" class="pt-36 pb-32">
       <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
+          <div
+            class="max-w-xl mx-auto text-center mb-16"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100"
+            data-aos-anchor-placement="center-bottom"
+          >
             <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
             <h2
               class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
@@ -512,14 +680,45 @@
               Hubungi Saya
             </h2>
             <p class="font-medium text-secondary text-md md:text-lg">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
-              eligendi!
+              Hai, Saya senang sekali Anda berada di sini! Saya ingin mengundang
+              Anda untuk menghubungi saya dan berbagi ide, pertanyaan, atau
+              bahkan sekadar mengobrol santai.
             </p>
           </div>
         </div>
-        <form action="">
+        <div
+          class="hidden bg-teal-100 rounded-b text-teal-900 px-4 py-3 shadow-md mx-4 mb-4 form-alert"
+          role="alert"
+        >
+          <div class="flex items-center">
+            <div class="py-1">
+              <svg
+                class="fill-current h-6 w-6 text-teal-500 mr-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"
+                />
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold">
+                Terimakasih!
+                <span class="font-medium">Pesan Anda Sudah Saya Terima</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <form name="submit-to-google-sheet">
           <div class="w-full lg:w-2/3 lg:mx-auto">
-            <div class="w-full px-4 mb-8">
+            <div
+              class="w-full px-4 mb-8"
+              data-aos="fade-right"
+              data-aos-duration="600"
+              data-aos-delay="100"
+              data-aos-anchor-placement="center-bottom"
+            >
               <label for="name" class="text-base text-primary font-bold"
                 >Nama</label
               >
@@ -527,9 +726,16 @@
                 type="text"
                 id="name"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:ring-primary focus:ring-1 focus:border-primary"
+                name="nama"
               />
             </div>
-            <div class="w-full px-4 mb-8">
+            <div
+              class="w-full px-4 mb-8"
+              data-aos="fade-right"
+              data-aos-duration="600"
+              data-aos-delay="200"
+              data-aos-anchor-placement="center-bottom"
+            >
               <label for="email" class="text-base text-primary font-bold"
                 >Email</label
               >
@@ -537,9 +743,16 @@
                 type="email"
                 id="email"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:ring-primary focus:ring-1 focus:border-primary"
+                name="email"
               />
             </div>
-            <div class="w-full px-4 mb-8">
+            <div
+              class="w-full px-4 mb-8"
+              data-aos="fade-right"
+              data-aos-duration="600"
+              data-aos-delay="300"
+              data-aos-anchor-placement="center-bottom"
+            >
               <label for="pesan" class="text-base text-primary font-bold"
                 >Pesan</label
               >
@@ -547,13 +760,34 @@
                 type="text"
                 id="pesan"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:ring-primary focus:ring-1 focus:border-primary h-32"
+                name="pesan"
               ></textarea>
             </div>
-            <div class="w-full px-4">
+            <div
+              class="w-full px-4"
+              data-aos="fade-right"
+              data-aos-duration="600"
+              data-aos-delay="400"
+              data-aos-anchor-placement="center-bottom"
+            >
               <button
-                class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500"
+                class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500 btn-kirim"
+                type="submit"
               >
                 Kirim
+              </button>
+              <button
+                type="button"
+                class="hidden bg-primary flex text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full justify-center btn-loading"
+                disabled
+              >
+                <img
+                  src="assets/img/loading-svgrepo-com.svg"
+                  class="animate-spin h-5 w-5 mr-3"
+                />
+                <!-- ... -->
+
+                <span>Loading</span>
               </button>
             </div>
           </div>
@@ -565,42 +799,58 @@
     <footer class="bg-dark pt-24 pb-12">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+          <div
+            class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3"
+            data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-delay="100"
+            data-aos-anchor-placement="center-bottom"
+          >
             <h2 class="font-bold text-4xl text-white mb-5">Ahmad Fahmi Faza</h2>
             <h3 class="font-bold text-2xl mb-2">Hubungi Saya</h3>
             <p>fahmifaza6@gmail.com</p>
             <p>Perum Omah Alit Blok A No 12, Pekalongan Timur</p>
             <p>Kota Pekalongan</p>
           </div>
-          <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white mb-5">
-              Kategori Tulisan
-            </h3>
+          <div
+            class="w-full px-4 mb-12 md:w-1/3"
+            data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-delay="200"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <h3 class="font-semibold text-xl text-white mb-5">Collaboration</h3>
             <ul class="text-slate-300">
               <li>
                 <a
-                  href="#"
+                  href="#circuse"
                   class="inline-block text-base hover:text-primary mb-3"
-                  >Programming</a
+                  >Circuse</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#fukkyu"
                   class="inline-block text-base hover:text-primary mb-3"
-                  >Music</a
+                  >Fukkyu</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#pss"
                   class="inline-block text-base hover:text-primary mb-3"
-                  >Badminton</a
+                  >PSS X PLAT G</a
                 >
               </li>
             </ul>
           </div>
-          <div class="w-full px-4 mb-12 md:w-1/3">
+          <div
+            class="w-full px-4 mb-12 md:w-1/3"
+            data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-delay="300"
+            data-aos-anchor-placement="center-bottom"
+          >
             <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
             <ul class="text-slate-300">
               <li>
@@ -635,7 +885,7 @@
                 <a
                   href="#"
                   class="inline-block text-base hover:text-primary mb-3"
-                  >Blog</a
+                  >Collaboration</a
                 >
               </li>
               <li>
@@ -650,7 +900,13 @@
         </div>
 
         <div class="w-full pt-10 border-t border-slate-700">
-          <div class="flex items-center justify-center mb-5">
+          <div
+            class="flex items-center justify-center mb-5"
+            data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-delay="100"
+            data-aos-anchor-placement="bottom-bottom"
+          >
             <!-- instagram -->
             <a
               href="https://instagram.com/fahmifaza_"
@@ -728,7 +984,13 @@
               </svg>
             </a>
           </div>
-          <p class="font-medium text-xs text-center text-secondary">
+          <p
+            class="font-medium text-xs text-center text-secondary"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100"
+            data-aos-anchor-placement="bottom-bottom"
+          >
             Dibuat dengan <span class="text-primary"> ❤️ </span>oleh
             <a href="" target="_blank" class="font-bold text-primary"> Fahmi</a
             >, menggunakan
@@ -744,6 +1006,41 @@
       </div>
     </footer>
     <!-- footer end -->
+    <!-- my JS -->
     <script src="js/script.js"></script>
+    <!-- aos JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzNBzK3RrmaH_wq49wpOHOlqtbyFrRXOCQZ0PfVphEAGD_SPSShU07bJHHemqoMh2vu/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const formAlert = document.querySelector(".form-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("hidden");
+        btnKirim.classList.toggle("hidden");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("hidden");
+            btnKirim.classList.toggle("hidden");
+            // tampilkan Alert
+            formAlert.classList.toggle("hidden");
+            // reset formnya
+            form.reset();
+
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
